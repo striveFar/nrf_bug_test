@@ -1,0 +1,15 @@
+.DS_Store
+# editors
+.vscode
+*.swp
+*~
+*.bkp
+
+# python
+.venv
+
+# build
+.cache
+build*/
+
+__pycache__/
