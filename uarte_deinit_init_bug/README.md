@@ -99,7 +99,7 @@ dtc: minimum required is "1.4.6"
 
 编译：
 ```
-west build -o=-j8 -p always -b nrf52840dk_nrf52840 /path/to/uarte --build-dir build-uarte
+west build -o=-j8 -p always -b nrf52840dk_nrf52840 /path/to/proj --build-dir build-proj
 ```
 
 ### 复现方式:
