@@ -79,12 +79,6 @@ void nrfx_uarte_uninit(nrfx_uarte_t const * p_instance)
 执行nrfx_uarte_uninit后，再次执行nrfx_uarte_init, 串口uarte 无法接收数据
 观察log 信息，840 仅在第一次调用nrfx_uarte_uninit(p_inst);之前的5秒内可以收到上位机发过来的数据并显示
 
-### log报错信息:
-
-尝试反复插拔之后，串口错误状态寄存器（ERRORSRC）会报04或者05或者是01，
-之后一旦连接RX（此时上位机依旧持续发包）就一直进错误回调或无法继续接收，只能复位芯片，
-尝试了多种方法清除错误均无法避免重复进错误回调的问题，哪怕是重新deinit/init UARTE也不行，
-
 ### 工程环境及编译：
 ```
 Ubuntu 22.04.4 LTS
